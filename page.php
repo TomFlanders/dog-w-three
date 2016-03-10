@@ -1,0 +1,43 @@
+<?php
+/**
+ * The main template file.
+ *
+ */
+
+get_header(); ?>
+
+<!-- content area -->
+<div class="w3-card-4 w3-round w3-padding-small">
+		<?php
+
+			/* Start the Loop */
+			while ( have_posts() ) : the_post();
+$format = get_post_format() ? : 'standard';
+?>
+
+<header class="w3-container w3-teal w3-round w3-text-shadow w3-large">
+<?php the_title(); ?>
+</header>
+
+<article class="w3-container">
+<div id="post-><?php the_ID(); ?>" <?php post_class(); ?>>
+<?php the_post_thumbnail(); ?>
+<?php the_content(); ?>
+
+</div>
+</article>
+<?php
+			endwhile;
+
+?>
+
+</div>
+</div>
+<?php
+get_sidebar();
+?>
+</div>
+
+<?php
+get_footer();
+?>
