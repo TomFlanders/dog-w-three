@@ -38,8 +38,9 @@ if($show_header_logo) { ?>
 
 <!-- menu -->
 <div id="navmenu" class="w3-container w3-center">
-<ul>
-  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+<ul class="menu">
+  <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );
+  ?>
 </ul>
   </div>
 
