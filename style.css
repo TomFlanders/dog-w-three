@@ -8,12 +8,13 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dog-w-three
-Tags: green, two-columns, right-sidebar, responsive-layout
+Tags: two-columns, right-sidebar
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
 */
+
 
 .alignnone {
     margin: 5px 20px 20px 0;
@@ -124,10 +125,27 @@ a img.aligncenter {
 
 }
 
-.menu li {
-  padding-left: 5px;
+
+#navmenu ul {margin: 0; padding: 0;
+  list-style-type: none; list-style-image: none; white-space: nowrap;}
+
+#navmenu li {display: inline;white-space: nowrap; }
+
+/* menu stuff */
+.dogmenu {
+  text-align: center;
 }
 
-.menu .children {
+.dogmenu ul {
+  list-style: none;
+  display: inline;
+}
+
+.dogmenu ul ul {
+  list-style: none;
   display: none;
+}
+
+.dogmenu li {
+    margin-left: 5px;
 }

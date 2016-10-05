@@ -26,7 +26,9 @@ $format = get_post_format() ? : 'standard';
 <?php wp_link_pages( $paging_defaults ); ?>
 
 <div class="w3-small"><?php the_tags("Tags: ", ",", " | ");?>
-<a href="<?php the_permalink() ?>">comment<span class="w3-badge w3-teal w3-smaller"><?php comments_number("0","1","%"); ?></span></a>
+<a href="<?php the_permalink() ?>"><span class="w3-smaller">
+	<?php comments_number( __('Comments (0)'), __('Comments (1)'), __('Comments (%)') ); ?>
+</span></a>
 </div>
 </div>
 </article>
