@@ -17,11 +17,18 @@ function theme_prefix_setup() {
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
-wp_register_style( 'w3_style', plugins_url( 'dog-w-three/w3.css' ) );
-wp_enqueue_style( 'w3_style' );
+function dogw3_enqueue_styles() {
+  wp_register_style( 'dogw3_customstyle', plugins_url( 'dogw3/custom-editor-style.css' ) );
+	wp_enqueue_style( 'dogw3_customstyle' );
 
-wp_register_style( 'dogw3_style', plugins_url( 'dog-w-three/style.css' ) );
-wp_enqueue_style( 'dogw3_style' );
+  wp_register_style( 'w3_style', plugins_url( 'dog-w-three/w3.css' ) );
+    wp_enqueue_style( 'w3_style' );
+
+  wp_register_style( 'dogw3_style', plugins_url( 'dog-w-three/style.css' ) );
+  wp_enqueue_style( 'dogw3_style' );
+}
+add_action( 'wp_enqueue_scripts', 'dogw3_enqueue_styles' );
+
 
 function dogw3_widgets_init() {
 
@@ -51,12 +58,6 @@ function dogw3_setup() {
   add_theme_support( 'automatic-feed-links' );
 }
 add_action( 'after_setup_theme', 'dogw3_setup' );
-
-function dogw3_add_editor_styles() {
-  wp_register_style( 'dogw3_customstyle', plugins_url( 'dogw3/custom-editor-style.css' ) );
-	wp_enqueue_style( 'dogw3_customstyle' );
-}
-add_action( 'admin_init', 'dogw3_add_editor_styles' );
 
 /* paging settings */
 $paging_defaults = array(
