@@ -18,13 +18,13 @@ function theme_prefix_setup() {
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
 function dogw3_enqueue_styles() {
-  wp_register_style( 'dogw3_customstyle', '/wp-content/themes/dogw3/custom-editor-style.css' );
+  wp_register_style( 'dogw3_customstyle', '/wp-content/themes/dog-w-three/custom-editor-style.css' );
 	wp_enqueue_style( 'dogw3_customstyle' );
 
-  wp_register_style( 'w3_style', '/wp-content/themes/dogw3/dog-w-three/w3.css' );
+  wp_register_style( 'w3_style', '/wp-content/themes/dog-w-three/w3.css' );
     wp_enqueue_style( 'w3_style' );
 
-  wp_register_style( 'dogw3_style', '/wp-content/themes/dogw3/dog-w-three/style.css' );
+  wp_register_style( 'dogw3_style', '/wp-content/themes/dog-w-three/style.css' );
   wp_enqueue_style( 'dogw3_style' );
 }
 add_action( 'wp_enqueue_scripts', 'dogw3_enqueue_styles' );
