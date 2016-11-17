@@ -17,6 +17,14 @@ function theme_prefix_setup() {
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function wpdocs_theme_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+
 function dogw3_enqueue_styles() {
   wp_register_style( 'dogw3_customstyle', '/wp-content/themes/dog-w-three/custom-editor-style.css' );
 	wp_enqueue_style( 'dogw3_customstyle' );

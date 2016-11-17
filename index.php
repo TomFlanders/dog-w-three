@@ -27,7 +27,7 @@ $format = get_post_format() ? : 'standard';
 
 <div class="w3-small"><?php the_tags("Tags: ", ",", " | ");?>
 <a href="<?php the_permalink() ?>"><span class="w3-smaller">
-	<?php comments_number( __('Comments (0)'), __('Comments (1)'), __('Comments (%)') ); ?>
+	<?php comments_number( __('Comments (0)','dog-w-three'), __('Comments (1)','dog-w-three'), __('Comments (%)','dog-w-three') ); ?>
 </span></a>
 </div>
 </div>
