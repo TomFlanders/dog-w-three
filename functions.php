@@ -17,6 +17,11 @@ function theme_prefix_setup() {
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
+function theme_slug_setup() {
+   add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'theme_slug_setup' );
+
 /**
  * Registers an editor stylesheet for the theme.
  */
@@ -46,7 +51,7 @@ function dogw3_widgets_init() {
 		'description' => __( 'Right sidebar which appears on all posts and pages.', 'dog-w-three' ),
 		'before_widget' => '<div id="%1$s" class="%2$s">',
 		'after_widget' => '</div>',
-		'before_title' => ' <p class="w3-teal w3-round w3-text-shadow" style="padding-left: 5px">',
+		'before_title' => ' <p class="w3-teal w3-round w3-text-shadow pad5left">',
 		'after_title' => '</p>',
 	) );
 

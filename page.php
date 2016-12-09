@@ -21,7 +21,7 @@ $format = get_post_format() ? : 'standard';
 
 <article class="w3-container">
 <div id="post-><?php the_ID(); ?>" <?php post_class(); ?>>
-<?php the_post_thumbnail(); ?>
+<div class="post-featured-image"><?php the_post_thumbnail(); ?></div>
 <?php the_content(); ?>
 
 </div>
