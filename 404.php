@@ -4,7 +4,13 @@
  *
  */
 
-get_header(); ?>
+ if (function_exists('get_header')) {
+ get_header();
+ } else {
+ die();
+ }
+
+?>
 
 <!-- content area -->
 <div class="w3-card-4 w3-round w3-padding-small">

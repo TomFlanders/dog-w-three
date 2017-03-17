@@ -4,7 +4,13 @@
  *
  */
 
-get_header(); ?>
+ if (function_exists('get_header')) {
+ get_header();
+ } else {
+ die();
+ }
+
+?>
 
 <div class="w3-card-4 w3-round w3-padding-small">
 		<?php
@@ -63,3 +69,5 @@ get_sidebar();
 <?php
 get_footer();
 ?>
+</body>
+</html>

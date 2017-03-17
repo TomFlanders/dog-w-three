@@ -26,13 +26,13 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 <body <?php body_class(); ?>>
 
 <!-- title bar -->
-  <div class="w3-teal w3-text-shadow w3-row borderdouble">
+  <div class="w3-teal w3-text-shadow w3-row dog-w-three-borderdouble">
 <table cellspacing=0 cellpadding=0>
 <tr>
 <td class="w3-teal w3-third" height="100px">
   <?php the_custom_logo();?>
 </td>
-<td class="w3-teal w3-center w3-third" height="100px">  <h1><a class="nouline" href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('name'); ?></a></h1>
+<td class="w3-teal w3-center w3-third" height="100px">  <h1><a class="dog-w-three-nouline" href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('name'); ?></a></h1>
 <?php bloginfo('description'); ?>
 </td>
 <td class="w3-teal w3-third" height="100px">
@@ -43,7 +43,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 </div>
 
 <!-- menu -->
-<div id="navmenu" class="dogmenu">
+<div id="navmenu" class="dog-w-three-menu">
   <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );
   ?>
   </div>

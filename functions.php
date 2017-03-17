@@ -30,20 +30,20 @@ function wpdocs_theme_add_editor_styles() {
 }
 add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
-function dogw3_enqueue_styles() {
-  wp_register_style( 'dogw3_customstyle', '/wp-content/themes/dog-w-three/custom-editor-style.css' );
-	wp_enqueue_style( 'dogw3_customstyle' );
+function dog_w_three_enqueue_styles() {
+  wp_register_style( 'dog-w-three_customstyle', '/wp-content/themes/dog-w-three/custom-editor-style.css' );
+	wp_enqueue_style( 'dog-w-three_customstyle' );
 
   wp_register_style( 'w3_style', '/wp-content/themes/dog-w-three/w3.css' );
     wp_enqueue_style( 'w3_style' );
 
-  wp_register_style( 'dogw3_style', '/wp-content/themes/dog-w-three/style.css' );
-  wp_enqueue_style( 'dogw3_style' );
+  wp_register_style( 'dog-w-three_style', '/wp-content/themes/dog-w-three/style.css' );
+  wp_enqueue_style( 'dog-w-three_style' );
 }
-add_action( 'wp_enqueue_scripts', 'dogw3_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'dog_w_three_enqueue_styles' );
 
 
-function dogw3_widgets_init() {
+function dog_w_three_widgets_init() {
 
 	register_sidebar( array(
 		'name' => __( 'Right Sidebar', 'dog-w-three' ),
@@ -56,13 +56,13 @@ function dogw3_widgets_init() {
 	) );
 
 }
-add_action( 'widgets_init', 'dogw3_widgets_init' );
+add_action( 'widgets_init', 'dog_w_three_widgets_init' );
 
 if ( ! isset( $content_width ) ) {
 	$content_width = 1200;
 }
 
-function dogw3_setup() {
+function dog_w_three_setup() {
   $args = array('true');
   add_theme_support( 'post-thumbnails', array( 'post', 'page', 'movie' ) );
   add_theme_support( "title-tag" );
@@ -70,7 +70,7 @@ function dogw3_setup() {
   add_theme_support( "custom-background", $args );
   add_theme_support( 'automatic-feed-links' );
 }
-add_action( 'after_setup_theme', 'dogw3_setup' );
+add_action( 'after_setup_theme', 'dog_w_three_setup' );
 
 /* paging settings */
 $paging_defaults = array(
@@ -87,9 +87,9 @@ $paging_defaults = array(
 );
 
 /* menu supprot */
-function register_dogw3_menu() {
+function register_dog_w_three_menu() {
   register_nav_menu('header-menu','Header Menu');
 }
-add_action( 'init', 'register_dogw3_menu' );
+add_action( 'init', 'register_dog_w_three_menu' );
 
 ?>
