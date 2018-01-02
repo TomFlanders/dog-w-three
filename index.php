@@ -20,7 +20,7 @@
 $format = get_post_format() ? : 'standard';
 ?>
 
-<header class="w3-container w3-teal w3-round w3-text-shadow w3-large">
+<header class="w3-container w3-teal w3-round w3-text-shadow w3-large entry-title">
 <?php the_title(); ?>
 </header>
 
@@ -34,6 +34,9 @@ $format = get_post_format() ? : 'standard';
 <a href="<?php the_permalink() ?>"><span class="w3-smaller">
 	<?php comments_number( __('Comments (0)','dog-w-three'), __('Comments (1)','dog-w-three'), __('Comments (%)','dog-w-three') ); ?>
 </span></a>
+ | Author: <span class="vcard author"><span class="fn"><?php the_author(); ?></span></span>
+ | Published: <span class="date updated published"><?php the_date(); ?></span>
+
 </div>
 </div>
 </article>
