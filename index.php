@@ -20,8 +20,8 @@
 $format = get_post_format() ? : 'standard';
 ?>
 
-<header class="w3-container w3-teal w3-round w3-text-shadow w3-large entry-title">
-<?php the_title(); ?>
+<header class="w3-container w3-teal w3-round w3-text-shadow w3-large">
+<span class="entry-title"<?php the_title(); ?></span>
 </header>
 
 <article class="w3-container">

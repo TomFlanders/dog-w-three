@@ -21,7 +21,7 @@ $format = get_post_format() ? : 'standard';
 ?>
 
 <header class="w3-teal w3-round w3-text-shadow w3-large w3-padding-small">
-<?php the_title(); ?>
+<span class="entry-title"<?php the_title(); ?></span>
 </header>
 
 <article class="w3-container">
@@ -50,6 +50,8 @@ $comments = get_comments($cargs);
 ?>
 </div>
 <div class="w3-small"><?php the_tags("Tags: ", ",", " ");?>
+ - Author: <span class="vcard author"><span class="fn"><?php the_author(); ?></span></span>
+ - Published: <span class="date updated published"><?php the_date(); ?></span>
 </div>
 </div>
 </article>
