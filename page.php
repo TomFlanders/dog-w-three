@@ -28,13 +28,21 @@ $format = get_post_format() ? : 'standard';
 <p></p>
 <div class="post-featured-image"><?php the_post_thumbnail(); ?></div>
 <?php the_content(); ?>
-
+ 
 </div>
 </article>
 <?php
 			endwhile;
 
 ?>
+<div class="w3-small"><?php the_tags("Tags: ", ",", " | ");?>
+<a href="<?php the_permalink() ?>"><span class="w3-smaller">
+	<?php comments_number( __('Comments (0)','dog-w-three'), __('Comments (1)','dog-w-three'), __('Comments (%)','dog-w-three') ); ?>
+</span></a>
+ | Author: <span class="vcard author"><span class="fn"><?php the_author(); ?></span></span>
+ | Published: <span class="date updated published"><?php the_date(); ?></span>
+
+</div>
 
 </div>
 </div>
