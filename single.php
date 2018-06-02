@@ -26,7 +26,7 @@ $format = get_post_format() ? : 'standard';
   <span class="entry-title"><?php the_title(); ?></span>
   </header>
 <p></p>
-<div class="post-featured-image"><?php the_post_thumbnail(); ?></div>
+<div class="post-featured-image"><?php the_post_thumbnail(array('tabindex' => '-1')); ?></div>
 <?php the_content(); ?>
 <?php wp_link_pages( $paging_defaults ); ?>
 <?php

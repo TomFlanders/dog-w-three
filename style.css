@@ -85,7 +85,7 @@ a img.aligncenter {
 }
 
 .wp-caption p.wp-caption-text .gallery-caption {
-    font-size: 11px;
+    font-size: 16px;
     line-height: 17px;
     margin: 0;
     padding: 0 4px 5px;
@@ -107,7 +107,7 @@ a img.aligncenter {
 	clip: auto !important;
 	color: #21759b;
 	display: block;
-	font-size: 14px;
+	font-size: 16px;
 	font-size: 0.875rem;
 	font-weight: bold;
 	height: auto;
