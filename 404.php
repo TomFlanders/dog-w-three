@@ -18,7 +18,7 @@
 404 - File Not Found
 </header>
 
-<article class="w3-container">
+<article class="w3-container dogw3_article">
 <p>Well, obviously we have failed you. I can not convey the depths of my sorrow that you have been led astray.</p>
 <p>I've assigned the problem to the <i>Pelican of Broken Links</i> so hopefully no one else will have to endure this horror.</p>
 <div class="w3-container w3-center">

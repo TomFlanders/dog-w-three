@@ -18,7 +18,7 @@
 You Broke It!
 </header>
 
-<article class="w3-container">
+<article class="w3-container dogw3_article">
 <p>Something wonderful did not happen. Well, obviously we have failed you. </p>
 <p>I've assigned the problem to the <i>Pelican of Broken Websites</i> so hopefully no one else will have to endure this horror.</p>
 <div class="w3-container w3-center">

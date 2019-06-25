@@ -43,7 +43,7 @@ function dogw3_widgets_init() {
 		'description' => __( 'Right sidebar which appears on all posts and pages.', 'dog-w-three' ),
 		'before_widget' => '<div id="%1$s" class="%2$s">',
 		'after_widget' => '</div>',
-		'before_title' => ' <p class="w3-teal w3-round w3-text-shadow" style="padding-left: 5px">',
+		'before_title' => ' <p class="w3-teal w3-round w3-text-shadow dogw3_extra_padding">',
 		'after_title' => '</p>',
 	) );
 
@@ -78,10 +78,13 @@ $paging_defaults = array(
   'echo'             => 1
 );
 
-/* menu supprot */
+/* menu support */
 function register_dogw3_menu() {
   register_nav_menu('header-menu','Header Menu');
 }
 add_action( 'init', 'register_dogw3_menu' );
+
+
+add_editor_style( $stylesheet = 'editor-style.css' );
 
 ?>

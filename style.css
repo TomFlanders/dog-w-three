@@ -8,6 +8,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dog-w-three
 Tags: two-columns, right-sidebar
+Theme URI: https://github.com/TomFlanders/dog-w-three
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -124,11 +125,10 @@ a img.aligncenter {
   text-decoration: none;
 }
 
-
-#navmenu ul {margin: 0; padding: 0;
+#dogw3_navmenu ul {margin: 0; padding: 0;
   list-style-type: none; list-style-image: none; white-space: nowrap;}
 
-#navmenu li {display: inline;white-space: nowrap; }
+#dogw3_navmenu li {display: inline;white-space: nowrap; }
 
 /* menu stuff */
 .dogmenu {
@@ -149,25 +149,49 @@ a img.aligncenter {
     margin-left: 5px;
 }
 
-.pad5top {
+.dogw3_pad5top {
   padding-top: 5px;
 }
 
-.pad5left {
+.dogw3_pad5left {
   padding-left: 5px;
 }
 
-.borderdouble {
+.dogw3_borderdouble {
   border: double;
 }
 
-.nouline {
+.dogw3_nouline {
   text-decoration: none;
 }
 
-.post-featured-image {
+.dogw3_post-featured-image {
     float: left;
     margin-right: 10px;
+}
+
+.dogw3_content_width {
+  width: 100%;
+}
+
+.dogw3_article {
+  margin: 5px 0px 5px 0px;
+}
+
+.dogw3_extra_padding {
+  padding-left: 5px;
+}
+
+a.dogw3_title:link {
+  text-decoration: none;
+}
+
+a.dogw3_title:visited {
+  text-decoration: none;
+}
+
+a.dogw3_title:hover {
+  text-decoration: none;
 }
 
 .author {
@@ -183,7 +207,8 @@ a img.aligncenter {
 }
 
 .entry-title {
-
+font-size: 1.5em;
+line-height: 0.9em;
 }
 
 .date {
