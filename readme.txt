@@ -1,4 +1,11 @@
 === dog-w-three ===
+Contributors: dogflanders
+Requires at least: 5.0
+Tested up to: 5.2
+Requires PHP: 7.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable Tag: 1.2.1
 
 dog-w-three WordPress theme, Copyright (C) 2016 Tom Flanders
 dog-w-three WordPress theme is licensed under the GPL.
@@ -22,9 +29,7 @@ Activiation and Use
 == Default image ==
 Default logo image from theme screenshot you can find at /dog-w-three/images/
 
-== License ==
-Unless otherwise specified, all the theme files, scripts and images
-are licensed under GNU General Public License version 2, see http://www.gnu.org/licenses/gpl-2.0.html.
-
 == Version history ==
 1.0 Just the beginning
+1.1 Corrected enque 
+1.2 Resolved naming conflicts

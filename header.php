@@ -11,6 +11,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 
 <!-- title bar -->
   <div class="w3-teal w3-text-shadow w3-row dogw3_titlebar dogw3_borderdouble">
